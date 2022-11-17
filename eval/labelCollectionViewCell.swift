@@ -7,15 +7,24 @@
 
 import UIKit
 
-class labelCollectionViewCell: UICollectionViewCell, buttonPressed {
+class labelCollectionViewCell: UICollectionViewCell, passData {
     
-    func saveClicked(onClicked: Bool, label1: String, label2: String) {
-        if onClicked == true{
-            lblshow1.text = label1
-            lblbutton2.text = label2
-        }
+    func whenDataIsFilled(clicked: Bool, nameData: String, placeData: String) {
+        
+            if clicked == true{
+                lblshow1.text = nameData
+                lblbutton2.text = placeData
+            }
+            
+            print(nameData)
+            print(placeData)
     }
-
+    
+    
+    
+    
+    
+    
     @IBOutlet weak var lblshow1: UILabel!
     
     @IBOutlet weak var lblbutton2: UILabel!
@@ -23,7 +32,6 @@ class labelCollectionViewCell: UICollectionViewCell, buttonPressed {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         
         

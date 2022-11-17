@@ -7,41 +7,32 @@
 
 import UIKit
 
-protocol buttonPressed{
-    func saveClicked(onClicked : Bool, label1: String, label2: String)
+protocol passData{
+    func whenDataIsFilled(clicked : Bool, nameData : String, placeData : String)
 }
 
 
-class CollectionViewCell: UICollectionViewCell, whenClicked {
-    
-    
-    func addbuttonisClicked(onClick: Bool) {
-        
-    }
-    
+class CollectionViewCell: UICollectionViewCell {
+
 
     @IBOutlet weak var label1: UITextField!
     
     @IBOutlet weak var label2: UITextField!
     
-    var details_passing : buttonPressed?
-    
-    
     @IBOutlet weak var saveThings: UIButton!
     
     @IBOutlet weak var cancelThing: UIButton!
     
+    var deligate : passData?
     
     
     @IBAction func cancelAction(_ sender: UIButton) {
-        details_passing?.saveClicked(onClicked: false, label1: label1.text!, label2: label2.text!)
+        deligate?.whenDataIsFilled(clicked: false, nameData: label1.text!, placeData: label2.text!)
     }
 
     @IBAction func saveAction(_ sender: UIButton) {
-        details_passing?.saveClicked(onClicked: true, label1: label1.text!, label2: label2.text!)
+        deligate?.whenDataIsFilled(clicked: false, nameData: label1.text!, placeData: label2.text!)
     }
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

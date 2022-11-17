@@ -16,39 +16,68 @@
                 <rect key="frame" x="0.0" y="0.0" width="247" height="169"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xC3-eR-gJZ">
-                        <rect key="frame" x="75" y="20" width="97" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xC3-eR-gJZ">
+                        <rect key="frame" x="27" y="20" width="193" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="193" id="NPw-lo-r6b"/>
+                            <constraint firstAttribute="height" constant="34" id="Q0l-R9-ifk"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nch-Mm-z16">
-                        <rect key="frame" x="75" y="67" width="97" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mup-nl-POZ">
-                        <rect key="frame" x="20" y="118" width="67" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mup-nl-POZ">
+                        <rect key="frame" x="160" y="118" width="67" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="bcp-jy-A62"/>
+                            <constraint firstAttribute="height" constant="31" id="vUM-np-rT0"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="cancel"/>
                         <connections>
                             <action selector="cancelAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Uhc-pX-ePx"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IO3-ah-gdw">
-                        <rect key="frame" x="167" y="118" width="54" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IO3-ah-gdw">
+                        <rect key="frame" x="20" y="118" width="54" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="101-qC-hsP"/>
+                            <constraint firstAttribute="height" constant="31" id="xjV-UV-zNK"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="save"/>
                         <connections>
                             <action selector="saveAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Z8v-Qe-xgv"/>
                         </connections>
                     </button>
+                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nch-Mm-z16">
+                        <rect key="frame" x="27" y="67" width="193" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="193" id="5qQ-f1-4cw"/>
+                            <constraint firstAttribute="height" constant="34" id="GwN-ID-Sg9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Nch-Mm-z16" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" symbolic="YES" id="BbN-cK-IW1"/>
+                <constraint firstItem="Mup-nl-POZ" firstAttribute="leading" secondItem="IO3-ah-gdw" secondAttribute="trailing" constant="86" id="EBJ-TW-uHW"/>
+                <constraint firstAttribute="trailing" secondItem="Nch-Mm-z16" secondAttribute="trailing" constant="34" id="Iym-Sh-LZ3"/>
+                <constraint firstItem="Mup-nl-POZ" firstAttribute="top" secondItem="Nch-Mm-z16" secondAttribute="bottom" constant="17" id="Jjw-ql-nWp"/>
+                <constraint firstAttribute="bottom" secondItem="Mup-nl-POZ" secondAttribute="bottom" constant="20" id="Qvd-BO-huG"/>
+                <constraint firstItem="Nch-Mm-z16" firstAttribute="top" secondItem="xC3-eR-gJZ" secondAttribute="bottom" constant="12" id="RUx-Ra-PU5"/>
+                <constraint firstAttribute="bottom" secondItem="IO3-ah-gdw" secondAttribute="bottom" constant="20" id="aJa-6h-SEb"/>
+                <constraint firstItem="IO3-ah-gdw" firstAttribute="top" secondItem="Nch-Mm-z16" secondAttribute="bottom" constant="17" id="ffB-cR-clU"/>
+                <constraint firstItem="xC3-eR-gJZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="21" id="pU8-tc-217"/>
+                <constraint firstItem="Mup-nl-POZ" firstAttribute="top" secondItem="Nch-Mm-z16" secondAttribute="bottom" constant="17" id="qje-W8-Ro7"/>
+                <constraint firstAttribute="trailing" secondItem="xC3-eR-gJZ" secondAttribute="trailing" constant="34" id="tss-y7-xcL"/>
+                <constraint firstItem="IO3-ah-gdw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="urk-MR-5Uy"/>
+                <constraint firstItem="Nch-Mm-z16" firstAttribute="top" secondItem="xC3-eR-gJZ" secondAttribute="bottom" constant="12" id="v9s-aC-HA9"/>
+                <constraint firstAttribute="trailing" secondItem="Mup-nl-POZ" secondAttribute="trailing" constant="20" id="vO9-R0-i4u"/>
+                <constraint firstItem="xC3-eR-gJZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" symbolic="YES" id="xmk-rv-m0e"/>
+            </constraints>
             <size key="customSize" width="247" height="169"/>
             <connections>
                 <outlet property="cancelThing" destination="Mup-nl-POZ" id="wmD-gu-FAX"/>

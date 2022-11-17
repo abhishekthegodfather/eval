@@ -17,18 +17,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSE-hH-E2M">
-                        <rect key="frame" x="49" y="8" width="154" height="144"/>
+                        <rect key="frame" x="48.5" y="7.5" width="154" height="144"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="plusThing" title=""/>
                     </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.38431372549999998" green="0.30980392159999998" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="SSE-hH-E2M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="49" id="TUT-6r-dsU"/>
-                <constraint firstItem="SSE-hH-E2M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="YOI-Vh-BcF"/>
-                <constraint firstAttribute="bottom" secondItem="SSE-hH-E2M" secondAttribute="bottom" constant="7" id="m2e-qI-c11"/>
-                <constraint firstAttribute="trailing" secondItem="SSE-hH-E2M" secondAttribute="trailing" constant="48" id="zy9-CZ-tcU"/>
+                <constraint firstItem="SSE-hH-E2M" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="XaY-Pc-oYb"/>
+                <constraint firstItem="SSE-hH-E2M" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gKq-nq-1ZM"/>
             </constraints>
             <size key="customSize" width="251" height="159"/>
             <connections>
