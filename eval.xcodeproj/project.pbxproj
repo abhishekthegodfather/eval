@@ -16,6 +16,10 @@
 		8486DCFC29254EF700BA7AD2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486DCFA29254EF700BA7AD2 /* CollectionViewCell.swift */; };
 		8486DCFD29254EF700BA7AD2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486DCFB29254EF700BA7AD2 /* CollectionViewCell.xib */; };
 		8486DCFF2925E1E000BA7AD2 /* nameArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486DCFE2925E1E000BA7AD2 /* nameArray.swift */; };
+		8486DD022925EF1100BA7AD2 /* AddCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486DD002925EF1100BA7AD2 /* AddCollectionViewCell.swift */; };
+		8486DD032925EF1100BA7AD2 /* AddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486DD012925EF1100BA7AD2 /* AddCollectionViewCell.xib */; };
+		8486DD062925EFC600BA7AD2 /* labelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8486DD042925EFC600BA7AD2 /* labelCollectionViewCell.swift */; };
+		8486DD072925EFC600BA7AD2 /* labelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8486DD052925EFC600BA7AD2 /* labelCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		8486DCFA29254EF700BA7AD2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		8486DCFB29254EF700BA7AD2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		8486DCFE2925E1E000BA7AD2 /* nameArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameArray.swift; sourceTree = SOURCE_ROOT; };
+		8486DD002925EF1100BA7AD2 /* AddCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		8486DD012925EF1100BA7AD2 /* AddCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		8486DD042925EFC600BA7AD2 /* labelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelCollectionViewCell.swift; sourceTree = "<group>"; };
+		8486DD052925EFC600BA7AD2 /* labelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = labelCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 		847318A32925312F0090CE01 /* eval */ = {
 			isa = PBXGroup;
 			children = (
+				8486DD002925EF1100BA7AD2 /* AddCollectionViewCell.swift */,
+				8486DD012925EF1100BA7AD2 /* AddCollectionViewCell.xib */,
+				8486DD042925EFC600BA7AD2 /* labelCollectionViewCell.swift */,
+				8486DD052925EFC600BA7AD2 /* labelCollectionViewCell.xib */,
 				8486DCFE2925E1E000BA7AD2 /* nameArray.swift */,
 				8486DCFA29254EF700BA7AD2 /* CollectionViewCell.swift */,
 				8486DCFB29254EF700BA7AD2 /* CollectionViewCell.xib */,
@@ -135,9 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				847318B1292531310090CE01 /* LaunchScreen.storyboard in Resources */,
+				8486DD072925EFC600BA7AD2 /* labelCollectionViewCell.xib in Resources */,
 				847318AE292531310090CE01 /* Assets.xcassets in Resources */,
 				8486DCFD29254EF700BA7AD2 /* CollectionViewCell.xib in Resources */,
 				847318AC2925312F0090CE01 /* Main.storyboard in Resources */,
+				8486DD032925EF1100BA7AD2 /* AddCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,10 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8486DD022925EF1100BA7AD2 /* AddCollectionViewCell.swift in Sources */,
 				847318A92925312F0090CE01 /* ViewController.swift in Sources */,
 				847318A52925312F0090CE01 /* AppDelegate.swift in Sources */,
 				8486DCFC29254EF700BA7AD2 /* CollectionViewCell.swift in Sources */,
 				847318A72925312F0090CE01 /* SceneDelegate.swift in Sources */,
+				8486DD062925EFC600BA7AD2 /* labelCollectionViewCell.swift in Sources */,
 				8486DCFF2925E1E000BA7AD2 /* nameArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

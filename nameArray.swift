@@ -8,7 +8,10 @@
 import Foundation
 
 
-struct Details{
+struct Details1{
     var name : String
+}
+
+struct Deatils2{
     var place : String
 }

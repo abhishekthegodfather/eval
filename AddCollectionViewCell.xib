@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addbtn" id="gTV-IL-0wX" customClass="AddCollectionViewCell" customModule="eval" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="159"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSE-hH-E2M">
+                        <rect key="frame" x="49" y="8" width="154" height="144"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="plusThing" title=""/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="SSE-hH-E2M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="49" id="TUT-6r-dsU"/>
+                <constraint firstItem="SSE-hH-E2M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="YOI-Vh-BcF"/>
+                <constraint firstAttribute="bottom" secondItem="SSE-hH-E2M" secondAttribute="bottom" constant="7" id="m2e-qI-c11"/>
+                <constraint firstAttribute="trailing" secondItem="SSE-hH-E2M" secondAttribute="trailing" constant="48" id="zy9-CZ-tcU"/>
+            </constraints>
+            <size key="customSize" width="251" height="159"/>
+            <connections>
+                <outlet property="addbtnpart1" destination="SSE-hH-E2M" id="HPB-bR-oRd"/>
+            </connections>
+            <point key="canvasLocation" x="183.33333333333334" y="72.65625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plusThing" width="130" height="130"/>
+    </resources>
+</document>

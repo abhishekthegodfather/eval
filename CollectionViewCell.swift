@@ -7,39 +7,38 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+protocol buttonPressed{
+    func saveClicked(onClicked : Bool, label1: String, label2: String)
+}
 
-    @IBOutlet weak var lblpart1: UITextField!
-    
-    @IBOutlet weak var lblpart2: UITextField!
-    
-    @IBOutlet weak var addbtn: UIButton!
-    
-    @IBOutlet weak var savebtn: UIButton!
-    
-    @IBOutlet weak var cancel: UIButton!
-    
-    
-    
-    @IBAction func addbtnaction(_ sender: UIButton) {
-        savebtn.isHidden = false
-        cancel.isHidden = false
-        lblpart1.isHidden = false
-        lblpart2.isHidden = false
 
-        addbtn.isHidden = true
-
+class CollectionViewCell: UICollectionViewCell, whenClicked {
+    
+    
+    func addbuttonisClicked(onClick: Bool) {
+        
     }
     
+
+    @IBOutlet weak var label1: UITextField!
+    
+    @IBOutlet weak var label2: UITextField!
+    
+    var details_passing : buttonPressed?
+    
+    
+    @IBOutlet weak var saveThings: UIButton!
+    
+    @IBOutlet weak var cancelThing: UIButton!
+    
+    
+    
     @IBAction func cancelAction(_ sender: UIButton) {
-        savebtn.isHidden = true
-        cancel.isHidden = true
-        lblpart1.isHidden = true
-        lblpart2.isHidden = true
-        
-        addbtn.isHidden = false
-        
-        
+        details_passing?.saveClicked(onClicked: false, label1: label1.text!, label2: label2.text!)
+    }
+
+    @IBAction func saveAction(_ sender: UIButton) {
+        details_passing?.saveClicked(onClicked: true, label1: label1.text!, label2: label2.text!)
     }
     
     
@@ -47,13 +46,7 @@ class CollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        savebtn.isHidden = true
-        cancel.isHidden = true
-        lblpart1.isHidden = true
-        lblpart2.isHidden = true
-        
-        
     }
 
 }
+
